@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+
+    document.getElementById('downloadCvButton').addEventListener('click', function () {
+        // Simule un clic sur l'input de type file
+        document.getElementById('cvFileInput').click();
+    });
+
+    document.getElementById('cvFileInput').addEventListener('change', function (event) {
+        // Si un fichier est sélectionné
+        const file = event.target.files[0];
+        if (file) {
+            // Crée un lien pour télécharger ou afficher le fichier
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(file);
+            link.download = file.name;
+            link.click();
+        }
+    });
+</script>
+
+    </script>
+</head>
+<body>
+
+    <!-- header section -->
+
+    <header>
+
+        <!-- navbar -->
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+               
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">My Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                  </li>
+                  
+                </ul>
+               <button class="btn btn-warning text-light downloawd"> Download CV</button>
+               <input type="file" id="cvFileInput" style="display: none;" accept=".pdf,.doc,.docx">
+              </div>
+            </div>
+          </nav>
+
+        <!-- hero -->
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12 hero-info">
+
+                    <h3>
+                        HELLO, I'M
+                    </h3>
+
+                    <h1>
+                        BEN ABDERRAHIM ALA
+                    </h1>
+
+                    <h4> 
+                        Développeur Front-end Junior
+                    </h4>
+
+                    <p class="lead">laborieux et ingénieux, j'ai une très bonne capacité d'adaptation et je cherche toujours à apprendre et améliorer mes compétences.</p>
+
+                    <div class="links">
+
+                        <button class="btn btn-red text-light">Hire Me</button>
+                        <button class="btn btn-white text-dark">Contact</button>
+                        
+                    
+                </div>
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <!-- about -->
+
+    <section class="about">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-12 p-5 about-item">
+
+                    <div class="top-card d-flex justify-content-betwenn align-items-center">
+
+                        <div class="text-top-card">
+                            <span>01</span>
+                            <h3>Formation</h3>
+                        </div>
+                        <div class="image-top-card">
+                            <img src="images/cat-01.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+                    <p class="lead"> 2015 - 2020 - BACCALAUREAT EN SCIENCE INFORMATIQUE
+                        LYCEE BOUARGOUB - NABEUL </p>
+                </div>
+
+                
+                <div class="col-lg-4 col-md-12 p-5 about-item">
+
+                    <div class="top-card d-flex justify-content-betwenn align-items-center">
+
+                        <div class="text-top-card">
+                            <span>02</span>
+                            <h3>Formation</h3>
+                        </div>
+                        <div class="image-top-card">
+                            <img src="images/cat-02.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+                    <p class="lead"> 2020-2023 - LICENCE EN BUSNIESS COMPUTING SPECIALITE E-BUSNIESS INSTITUT SUPERIEUR D'ADMINISTRATION DES AFFAIRES DE SFAX </p>
+                </div>
+
+                <div class="col-lg-4 col-md-12 p-5 about-item">
+
+                    <div class="top-card d-flex justify-content-betwenn align-items-center">
+
+                        <div class="text-top-card">
+                            <span>03</span>
+                            <h3>Formation</h3>
+                        </div>
+                        <div class="image-top-card">
+                            <img src="images/cat-03.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+                    <p class="lead"> 2023-Present - Master professionnel en Nouvelles Technologie E-business - ECOLE SUPERIEURE DE COMMERCE DE SFAX</p>
+                </div>
+
+
+
+            </div>
+
+            <div class="row mt-5">
+                <!-- Image à gauche -->
+                <div class="col-lg-6 col-md-12 text-center">
+                    <img src="images/portfolio.jpg" alt="Portfolio" class="img-fluid">
+                </div>
+            
+                <!-- Contenu à droite -->
+                <div class="col-lg-6 col-md-12 mt-5">
+                    <h5 class="section-top-title">About Me</h5>
+                    <h1 class="section-title">World Professional Web Developer</h1>
+                    <h5>Name:</h5>
+                    <p class="lead">BEN ABDERRAHIM ALA</p>
+                    <h5>E-MAIL:</h5>
+                    <p class="lead">alaabderahim20@gmail.com</p>
+                    <h5>Phone:</h5>
+                    <p class="lead">+216 21682548</p>
+                    <button class="btn btn-red text-light">
+                        Download CV
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="services">
+
+        <div class="container">
+
+            <h5 class="section-top-title text-center"> What I Do</h5>
+            <h1 class="section-title text-center"> My Services</h1>
+            <p class="section-description text-center">I specialize in creating responsive and user-friendly websites. From designing modern layouts to developing dynamic web applications.</p>
+       
+            <div class="row mt-5">
+
+                <!-- Premier service : Web Application -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="images/service-01.png" alt="" class="img-fluid">
+                        </div>
+                        <h3 class="service-title">Web Application</h3>
+                        <p class="lead">I develop custom web applications tailored to your needs. From interactive dashboards to feature-rich platforms, I focus on delivering efficient, scalable, and secure solutions.</p>
+                    </div>
+                </div>
+            
+                <!-- Deuxième service : Mobile Application -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="images/service-02.png" alt="" class="img-fluid">
+                        </div>
+                        <h3 class="service-title">Mobile Application</h3>
+                        <p class="lead">I create high-quality mobile applications that are fast, responsive, and user-friendly. Whether you need an app for Android or iOS.</p>
+                    </div>
+                </div>
+            
+                <!-- Troisième service : BI -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="images/service-03.png" alt="" class="img-fluid">
+                        </div>
+                        <h3 class="service-title">BI</h3>
+                        <p class="lead">I design and develop intuitive BI dashboards and graphical interfaces to help you visualize data effectively.</p>
+                    </div>
+                </div>
+            
+                <!-- Quatrième service : Concepteur -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="images/service-04.png" alt="" class="img-fluid">
+                        </div>
+                        <h3 class="service-title">Concepteur</h3>
+                        <p class="lead">I offer professional application design services focused on creating user-friendly and functional solutions. From initial concept to detailed design, I ensure every aspect of the application aligns with your vision and delivers an excellent user experience.</p>
+                    </div>
+                </div>
+            
+            </div>
+            
+            <section class="skills">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Image à gauche -->
+                        <div class="col-lg-5 col-md-12 ">
+                            <img src="images/skills.png" alt="Skills" class="img-fluid">
+                        </div>
+            
+                        <!-- Contenu à droite -->
+                        <div class="col-lg-7 col-md-12 skills-info">
+                            <h5 class="section-top-title">Skills</h5>
+                            <h1 class="section-title mt-4">I Develop Skills Regularly to <br> Keep Me Update</h1>
+                            <p class="section-description text-center mt-4">Most Common Methods For Designing Websites That Work Well On Desktop Is <br> Responsive And Adaptive Design</p>
+            
+                            <div class="skill">
+                                <div class="skil">
+                                    <h6>Angular</h6>
+                                    <h6>60%</h6>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Angular skill" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" style="width: 60%"></div>
+                                </div>
+                            </div>
+            
+                            <div class="skill">
+                                <div class="skil">
+                                    <h6>JavaScript</h6>
+                                    <h6>50%</h6>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="JavaScript skill" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" style="width: 50%"></div>
+                                </div>
+                            </div>
+            
+                            <div class="skill">
+                                <div class="skil">
+                                    <h6>HTML & CSS</h6>
+                                    <h6>90%</h6>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="HTML & CSS skill" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" style="width: 90%"></div>
+                                </div>
+                            </div>
+            
+                            <div class="skill">
+                                <div class="skil">
+                                    <h6>Flutter</h6>
+                                    <h6>50%</h6>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Flutter skill" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" style="width: 50%"></div>
+                                </div>
+                            </div>
+            
+                            <div class="skill">
+                                <div class="skil">
+                                    <h6>Bootstrap</h6>
+                                    <h6>50%</h6>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Bootstrap skill" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="portfolio">
+        
+                <div class="container">
+        
+        
+                    <h5 class="section-top-title text-center"> Portfolio</h5>
+                    <h1 class="section-title text-center"> My Amazing Works</h1>
+                    <p class="section-description text-center">Most Common Methods For Designing Websites That Work Well On Desktop Is <br> Responsive And Adaptive Design</p>
+               
+                </div>
+        
+        
+                <div class="row mt-5">
+        
+                    <!-- Premier service : Application Angular -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="service-card">
+                            <div class="service-img">
+                                <img src="images/service-01.png" alt="" class="img-fluid">
+                            </div>
+                            <h3 class="service-title"> Application Web avec la Framework Angular pour la gestion d’une parapharmacie</h3>
+                            <p class="lead">Développement une partie front-end d’une application web pour une site de parapharmacie en utilisant la Framework Angular. 
+                                Cette application afficher au utilisateur les nouveaux Articles et les produits et les nouveaux offres et le client permet de passer une commande à travers une panier.</p>
+                        </div>
+                    </div>
+                
+                    <!-- Deuxième service :  Application Symfony -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="service-card">
+                            <div class="service-img">
+                                <img src="images/service-02.png" alt="" class="img-fluid">
+                            </div>
+                            <h3 class="service-title">Application Web avec la Framework Symfony Pour la gestion des examens</h3>
+                            <p class="lead">Développement d’une application web pour une site de gestion des examens en utilisant la Framework Symfony et le systèmes de gestion de base de données MySQL (phpMyAdmin).
+        
+                                Cette application qui permet au étudiant, les enseignants et les administrateurs de faire des tâches selon leur rôle par exemple (Ajout/Suppression/Affichage/Update) des notes, des matières.</p>
+                        </div>
+                    </div>
+                </div>
+        
+            </section>
+        
+            <section class="contact">
+        
+                <div class="container">
+        
+                    <h1 class="section-title text-center text-light"> Contact With Me</h1>
+                    <p class="section-description text-center text-light">Most Common Methods For Designing Websites That Work Well On Desktop Is <br> Responsive And Adaptive Design</p>
+               
+                    <div class="row">
+        
+        
+                        <form action="" class="d-flex align-items-center justify-content-between flex-wrap">
+                            <!-- Champ FullName -->
+                            <input type="text" placeholder="FullName" class="form-control m-2 p-3">
+                        
+                            <!-- Champ E-MAIL -->
+                            <input type="email" placeholder="E-MAIL" class="form-control m-2 p-3">
+                        
+                            <!-- Champ Subject -->
+                            <input type="text" placeholder="Subject" class="form-control m-2 p-3">
+                        
+                            <!-- Champ MESSAGE -->
+                            <textarea placeholder="MESSAGE" class="form-control m-2 p-3" rows="1"></textarea>
+                        
+                            <!-- Bouton Submit -->
+                            <button type="submit" class="btn btn-dark m-2 p-3">Submit Message</button>
+                        </form>
+                        
+                    </div>
+        
+                </div>
+        
+            </section>
+            
+        </div>
+
+    </section>
+
+
+    
+
+    <footer>
+
+        <p class="text-light text-center lead"> Ala Ben Abderrahim 2024</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
